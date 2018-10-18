@@ -1,0 +1,70 @@
+{#<!DOCTYPE html>#}
+{#{% load static %}#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, user-scalable=no">#}
+{#    <title>Title</title>#}
+{#    <link rel="stylesheet" href="{% static "css/map.css" %}">#}
+{#    <script src="{% static "js/map.js" %}"></script>#}
+{#</head>#}
+{#<body>#}
+{#    <h3>My Google Maps </h3>#}
+{##}
+{#    <div id="googleMap"></div>#}
+{#    <div id="map"></div>#}
+{#    <!-- Replace the value of the key parameter with your own API key. -->#}
+{#    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCexM5f7m2dqBO-0uga2rKHthnrApqa9s4&callback=getLocation"></script>#}
+{##}
+{#</body>#}
+{#</html>#}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" charset="UTF-8" />
+    <link rel="stylesheet" href="{% static "css/map.css" %}">
+</head>
+
+<body>
+
+{#    <h1>My First Google Map</h1>#}
+{#        {% for camp in data %}#}
+{#        <h2>{{ camp.title}}</h2>#}
+{#        {% endfor %}#}
+{#        <script type="text/javascript">#}
+{#            var i, j, row, rows, cols, myArray;#}
+{#            rows = 2;#}
+{#            cols = 3; //adding columns in this time#}
+{#            myArray = []; //see first example above#}
+{#                            {% for camp in data %}#}
+{#            for (i = 0; i < rows; i += 1) {#}
+{#                myArray[i] = [];#}
+{#                row = myArray[i];#}
+{#                for (j = 0; j < cols; j += 1) {#}
+{#                    if(j==0){#}
+{#                        row[j]='{{ camp.title }}'#}
+{#                    }#}
+{#                    else if(j==1){#}
+{#                        row[j]='{{ camp.lat }}'#}
+{#                    }#}
+{#                    else {#}
+{#                        row[j]='{{ camp.long }}'#}
+{#                    }#}
+{#                }#}
+{#            }#}
+{#                            {% endfor %}#}
+{#            console.log(myArray)#}
+{##}
+{##}
+{#        </script>#}
+    <div id="googleMap" style="width:100%;height:800px;"></div>
+
+    <script src="{% static "js/map_original.js" %}"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc7FZQ6jG2VcxnxbMNdkPFFzrUsJxq-ys&callback=getLocation"></script>
+
+</body>
+
+</html>
+
+{#AIzaSyCc7FZQ6jG2VcxnxbMNdkPFFzrUsJxq-ys#}
