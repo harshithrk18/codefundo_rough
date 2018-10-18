@@ -9,7 +9,6 @@ for (i = 0; i < markers.length; i++) {
                     icon: icons[0]
                 });}
                 else {
-                    if (i==(markers.length-1)) {
                 var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
                 bounds.extend(position);
                 marker = new google.maps.Marker({
@@ -17,5 +16,4 @@ for (i = 0; i < markers.length; i++) {
                     map: map,
                     title: markers[i][0],
                     icon: icons[1]
-                });
-                }}}
+                });}
