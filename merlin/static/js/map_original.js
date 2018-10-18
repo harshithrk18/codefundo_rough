@@ -35,6 +35,19 @@ function detectBrowser() {
       var directionsService = new google.maps.DirectionsService;
       var directionsDisplay = new google.maps.DirectionsRenderer;
 
+      // var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
+      // var kmlLayer = new google.maps.KmlLayer(src, {
+      //       suppressInfoWindows: true,
+      //       preserveViewport: false,
+      //       map: map
+      //     });
+      //     kmlLayer.addListener('click', function(event) {
+      //       var content = event.featureData.infoWindowHtml;
+      //       var testimonial = document.getElementById('capture');
+      //       testimonial.innerHTML = content;
+      //     });
+
+
       //call renderer to display directions
       directionsDisplay.setMap(map);
 
@@ -52,22 +65,18 @@ function detectBrowser() {
           icon: icons[1]
       });
       var markers = [
-          ['3fe', 53.339964, -6.241972],
-          ['The Fumbally', 53.337031, -6.272995],
-          ['Coffeeangel', 53.343963, -6.262116],
-          ['Brother Hubbard', 53.332744, -6.265639],
-          ['Vice Coffee Inc.', 22.5726, 88.3639],
-          ['Roasted Brown', 53.344813, -6.264707],
-          ['Kaph', 53.342599, -6.263272],
-          ['Fallon & Byrne', 51.5074, 0.1278],
-          ['Clement & Pekoe', 53.341534, -6.26276],
-          ['my current location', latitude, longitude]
+          ['Relief camp 1', 27.3389, 88.6065],
+          ['Relief camp 2', 53.337031, -6.272995],
+          ['Relief camp 3', 53.343963, -6.262116],
+          ['Relief camp 4', 53.332744, -6.265639],
+          ['Relief camp 5', 22.5726, 88.3639],
+          ['your current location', latitude, longitude]
       ];
 
       // Info Window Content
       var infoWindowContent = [
           ['<div class="info_content">' +
-              '<h3>3fe</h3>' +
+              '<h3>Relief camp 1</h3>' +
               '<p>32 Grand Canal Street Lower, Grand Canal Dock, Dublin 2</p>' +
               '<img src="images/3fe.jpg" width="200" height="200">' +
               '</div>'
@@ -93,7 +102,7 @@ function detectBrowser() {
           ['<div class="info_content">' +
               '<h3>Roasted Brown</h3>' +
               '<p>1st Floor, Filmbase, Curved Street, Temple Bar, Dublin 2</p>' +
-              '<img src="images/survivors-camps-AFP11-640x480.jpg" width="200" height="200">' +
+              '<img src="survivors-camps-AFP11-640x480_uEGhECf.jpg" width="200" height="200">' +
               '</div>'
           ],
           ['<div class="info_content">' +
