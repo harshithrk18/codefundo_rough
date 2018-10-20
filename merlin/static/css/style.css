@@ -601,25 +601,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #safety iframe{
     display: inline-block;
-/*    float: left;*/
-/*    padding-right: 20px;*/
 }
 
-#safety #playlist li{
-/*    padding-left: 930px;*/
-    list-style:none;
-    
-
-}
-#safety #playlist img{
-    float: left;
-        margin-bottom: 10px;
-
+.anyClass {
+  height:550px;
+  overflow-y: scroll;
 }
 
-#safety li:hover{
+.anyClass li{
+    height: 112px;
+    width: 380px;
     cursor: pointer;
+    margin-bottom: 10px;
+    float: left;
 }
+
+.anyClass> li> img{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 190px;
+    height: 112px;
+}
+.anyClass p{
+    margin: 0px;
+    padding: 0px;
+}
+
 
 /* Product Advanced Featuress Section
 --------------------------------*/
