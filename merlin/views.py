@@ -8,13 +8,14 @@ from django.shortcuts import render
 from .models import ReliefCamp
 # Create your views here.
 
-def index(request):
+def map(request):
     data = ReliefCamp.objects.all()
-    return render(request, 'merlin/index.html',{'data':data})
+    return render(request, 'merlin/map.html', {'data':data})
 
-def original(request):
-    # data = ReliefCamp.objects.all()
-    return render(request, 'merlin/index1.html')
+def index(request):
+    return render(request, 'merlin/index.html')
+
+
 # Create your views here.
 
 # @login_required
